@@ -22,7 +22,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
 
     class init_state( LeggedRobotCfg.init_state ):
-        pos = [0.0, 0.0, 0.4] # x,y,z [m]
+        pos = [0.0, 0.0, 2] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
             "LF_HAA": 0.0,
             "LH_HAA": 0.0,
@@ -57,7 +57,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
         soft_dof_vel_limit = 0.95
         soft_torque_limit = 0.95
         only_positive_rewards = False
-        base_height_target = 0.5
+        base_height_target = 2.
         class scales( LeggedRobotCfg.rewards.scales ):
             pass
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
