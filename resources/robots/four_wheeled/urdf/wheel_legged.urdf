@@ -205,7 +205,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/base_link.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/base_link.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
@@ -264,7 +264,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LF_hip.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LF_hip.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -287,7 +287,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LF_thigh.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LF_thigh.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -310,7 +310,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LF_calf.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LF_calf.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.20392 0.20392 0.20392 1"/>
@@ -339,7 +339,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LF_wheel.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LF_wheel.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.69804 0.69804 0.69804 1"/>
@@ -424,7 +424,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RF_hip.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RF_hip.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -447,7 +447,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RF_thigh.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RF_thigh.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -470,7 +470,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RF_calf.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RF_calf.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.20392 0.20392 0.20392 1"/>
@@ -499,7 +499,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RF_wheel.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RF_wheel.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.69804 0.69804 0.69804 1"/>
@@ -584,7 +584,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LH_hip.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LH_hip.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -607,7 +607,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LH_thigh.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LH_thigh.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -630,7 +630,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LH_calf.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LH_calf.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.20392 0.20392 0.20392 1"/>
@@ -659,7 +659,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/LH_wheel.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/LH_wheel.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.69804 0.69804 0.69804 1"/>
@@ -744,7 +744,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RH_hip.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RH_hip.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -767,7 +767,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RH_thigh.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RH_thigh.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.8902 0.8902 0.91373 1"/>
@@ -790,7 +790,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RH_calf.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RH_calf.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.20392 0.20392 0.20392 1"/>
@@ -819,7 +819,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://wheel_legged_robot_description/meshes/RH_wheel.STL" scale="1 1 1"/>
+        <mesh filename="../meshes/RH_wheel.STL" scale="1 1 1"/>
       </geometry>
       <material name="orange"/>
       <color rgba="0.69804 0.69804 0.69804 1"/>

@@ -3,7 +3,9 @@ from legged_gym.envs.base.legged_robot_config import LeggedRobotCfg, LeggedRobot
 class FourWheeledCfg( LeggedRobotCfg ):
     class env( LeggedRobotCfg.env ):
         num_envs =  4096
-        num_actions = 12
+        num_actions = 16
+        num_observations = 60
+
 
     class terrain( LeggedRobotCfg.terrain ):
         mesh_type = 'plane'
@@ -15,10 +17,12 @@ class FourWheeledCfg( LeggedRobotCfg ):
         foot_name = 'Wheel'
         terminate_after_contacts_on = ["base"]
         self_collisions = 1
-        penalize_contacts_on = ["thigh", "calf", ]
+        penalize_contacts_on = ["thigh", "calf"]
+        flip_visual_attachments = False
+
 
     class init_state( LeggedRobotCfg.init_state ):
-        pos = [0.0, 0.0, 0.0] # x,y,z [m]
+        pos = [0.0, 0.0, 0.4] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
             "LF_HAA": 0.0,
             "LH_HAA": 0.0,
@@ -56,7 +60,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
         base_height_target = 0.5
         class scales( LeggedRobotCfg.rewards.scales ):
             pass
-    class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
+class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
             run_name = ''
             experiment_name = 'flat_fourwheeled'
