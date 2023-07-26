@@ -59,7 +59,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
         only_positive_rewards = False
         base_height_target = 2.
         class scales( LeggedRobotCfg.rewards.scales ):
-            pass
+            base_height = 1.
+
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
             run_name = ''
