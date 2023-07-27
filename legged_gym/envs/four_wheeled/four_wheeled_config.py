@@ -60,6 +60,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
         base_height_target = 2.
         class scales( LeggedRobotCfg.rewards.scales ):
             base_height = -1.
+            orientation = -2.
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
