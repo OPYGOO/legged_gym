@@ -46,8 +46,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
         }
 
     class control( LeggedRobotCfg.control ):
-        stiffness = {'HAA':60.,'HFE':100.,'KFE':100.}
-        damping = {'HAA':1.5,'HFE':3.,'KFE':3.}
+        stiffness = {'HAA':60.,'HFE':100.,'KFE':100.,'WHL':100.}
+        damping = {'HAA':1.5,'HFE':3.,'KFE':3.,'WHL':100.}
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
         decimation = 4
@@ -58,8 +58,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
         soft_torque_limit = 0.95
         only_positive_rewards = False
         base_height_target = 2.
-        class scales( LeggedRobotCfg.rewards.scales ):
-            base_height = -0.5
+        #class scales( LeggedRobotCfg.rewards.scales ):
+            #base_height = -0.5
             #orientation = -1.
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
