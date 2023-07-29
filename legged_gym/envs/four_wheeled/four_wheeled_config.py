@@ -58,7 +58,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
         soft_torque_limit = 0.95
         only_positive_rewards = False
         base_height_target = 2.
-        #class scales( LeggedRobotCfg.rewards.scales ):
+        class scales( LeggedRobotCfg.rewards.scales ):
+            pass
             #base_height = -0.5
             #orientation = -1.
 
