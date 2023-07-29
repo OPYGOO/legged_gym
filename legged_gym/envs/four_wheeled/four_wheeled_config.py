@@ -59,7 +59,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
         only_positive_rewards = False
         base_height_target = 2.
         class scales( LeggedRobotCfg.rewards.scales ):
-            base_height = -1.
+            base_height = -0.5
             #orientation = -1.
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
