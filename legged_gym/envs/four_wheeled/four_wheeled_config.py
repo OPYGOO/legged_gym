@@ -1,4 +1,5 @@
 from legged_gym.envs.base.legged_robot_config import LeggedRobotCfg, LeggedRobotCfgPPO
+import math
 
 class FourWheeledCfg( LeggedRobotCfg ):
     class env( LeggedRobotCfg.env ):
@@ -22,22 +23,22 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
 
     class init_state( LeggedRobotCfg.init_state ):
-        pos = [0.0, 0.0, 0.45] # x,y,z [m]
+        pos = [0.0, 0.0, 0.4] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
-            "LF_HAA": 0.0,
-            "LH_HAA": 0.0,
-            "RF_HAA": -0.0,
-            "RH_HAA": -0.0,
+            "LF_HAA": 0,
+            "LH_HAA": 0,
+            "RF_HAA": -0,
+            "RH_HAA": -0,
 
-            "LF_HFE": -0.5,
-            "LH_HFE": -0.5,
-            "RF_HFE": -0.5,
-            "RH_HFE": -0.5,
+            "LF_HFE": -0.3,
+            "LH_HFE": -0.3,
+            "RF_HFE": -0.3,
+            "RH_HFE": -0.3,
 
-            "LF_KFE": 2.0,
-            "LH_KFE": 2.0,
-            "RF_KFE": 2.0,
-            "RH_KFE": 2.0,
+            "LF_KFE": 1.0,
+            "LH_KFE": 1.0,
+            "RF_KFE": 1.0,
+            "RH_KFE": 1.0,
 
             "LF_WHL": 0.0,
             "LH_WHL": 0.0,
