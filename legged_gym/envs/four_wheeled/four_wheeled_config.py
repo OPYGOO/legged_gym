@@ -15,7 +15,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
     class asset( LeggedRobotCfg.asset ):
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/four_wheeled/urdf/wheel_legged.urdf"
         name = "four_wheeled"
-        foot_name = 'Wheel'
+        foot_name = 'wheel'
         terminate_after_contacts_on = ["base"]
         self_collisions = 1
         penalize_contacts_on = ["thigh", "calf"]
@@ -62,7 +62,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
         class scales( LeggedRobotCfg.rewards.scales ):
             orientation = -5.0
             torques = -0.000025
-            feet_air_time = 2.
+            feet_air_time = 2.0
+            tracking_ang_vel = 1.0
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
