@@ -62,7 +62,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
         class scales( LeggedRobotCfg.rewards.scales ):
             orientation = -5.0
             torques = -0.000025
-            feet_air_time = 2.0
+            feet_air_time = 1.0
             tracking_ang_vel = 1.0
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
