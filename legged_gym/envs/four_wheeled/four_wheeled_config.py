@@ -47,8 +47,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
         }
 
     class control( LeggedRobotCfg.control ):
-        stiffness = {'HAA':40.,'HFE':40.,'KFE':40.,'WHL':40.}
-        damping = {'HAA':2,'HFE':2,'KFE':2,'WHL':2}
+        stiffness = {'HAA':40.,'HFE':60.,'KFE':60.,'WHL':40.}
+        damping = {'HAA':3,'HFE':2,'KFE':2,'WHL':2}
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
         decimation = 4
