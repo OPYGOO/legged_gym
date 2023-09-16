@@ -15,11 +15,11 @@ class FourWheeledCfg( LeggedRobotCfg ):
     class asset( LeggedRobotCfg.asset ):
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/four_wheeled/urdf/wheel_legged.urdf"
         name = "four_wheeled"
-        foot_name = 'wheel'
+        foot_name = "wheel"
         terminate_after_contacts_on = ["base"]
         self_collisions = 1
         penalize_contacts_on = ["thigh", "calf"]
-        flip_visual_attachments = False
+        #flip_visual_attachments = False
 
 
     class init_state( LeggedRobotCfg.init_state ):
@@ -48,22 +48,19 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
     class control( LeggedRobotCfg.control ):
         stiffness = {'HAA':40.,'HFE':60.,'KFE':60.,'WHL':40.}
-        damping = {'HAA':3,'HFE':3,'KFE':3,'WHL':2}
+        damping = {'HAA':2,'HFE':2,'KFE':2,'WHL':2}
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
         decimation = 4
 
     class rewards( LeggedRobotCfg.rewards ):
-        soft_dof_pos_limit = 0.95
-        soft_dof_vel_limit = 0.95
-        soft_torque_limit = 0.95
         only_positive_rewards = False
-        base_height_target = 0.5
+        base_height_target = 0.75
         class scales( LeggedRobotCfg.rewards.scales ):
-            orientation = -5.0
-            torques = -0.000025
-            feet_air_time = 1.0
-            tracking_ang_vel = 1.0
+            pass
+        #   orientation = -5.0
+        #    torques = -0.000025
+        #   tracking_ang_vel = 1.0
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
