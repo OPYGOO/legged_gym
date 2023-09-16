@@ -19,7 +19,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
         terminate_after_contacts_on = ["base"]
         self_collisions = 1
         penalize_contacts_on = ["thigh", "calf"]
-        #flip_visual_attachments = False
+        flip_visual_attachments = False
 
 
     class init_state( LeggedRobotCfg.init_state ):
