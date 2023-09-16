@@ -30,10 +30,14 @@ class FourWheeledCfg( LeggedRobotCfg ):
             "RF_HAA": -0,
             "RH_HAA": -0,
 
-            "LF_HFE": -0.3154,
-            "LH_HFE": -0.3154,
-            "RF_HFE": -0.3154,
-            "RH_HFE": -0.3154,
+            #"LF_HFE": -0.3154,
+            #"LH_HFE": -0.3154,
+            #"RF_HFE": -0.3154,
+            #"RH_HFE": -0.3154,
+            "LF_HFE": -0.,
+            "LH_HFE": -0.,
+            "RF_HFE": -0.,
+            "RH_HFE": -0.,
 
             "LF_KFE": 0.5615,
             "LH_KFE": 0.5615,
