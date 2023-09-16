@@ -55,7 +55,8 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
     class rewards( LeggedRobotCfg.rewards ):
         only_positive_rewards = False
-        base_height_target = 0.75
+        base_height_target = 0.5
+        max_contact_force = 500.
         class scales( LeggedRobotCfg.rewards.scales ):
             pass
         #   orientation = -5.0
