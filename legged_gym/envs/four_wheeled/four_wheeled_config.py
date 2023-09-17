@@ -54,6 +54,10 @@ class FourWheeledCfg( LeggedRobotCfg ):
         action_scale = 0.25
         decimation = 4
 
+    class domain_rand(LeggedRobotCfg.domain_rand):
+        randomize_base_mass = True
+        added_mass_range = [-5., 5.]
+
     class rewards( LeggedRobotCfg.rewards ):
         only_positive_rewards = False
         base_height_target = 0.5
