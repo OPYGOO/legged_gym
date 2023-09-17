@@ -25,19 +25,15 @@ class FourWheeledCfg( LeggedRobotCfg ):
     class init_state( LeggedRobotCfg.init_state ):
         pos = [0.0, 0.0, 0.35] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
-            "LF_HAA": 0,
-            "LH_HAA": 0,
+            "LF_HAA": 0.2,
+            "LH_HAA": 0.2,
             "RF_HAA": -0,
             "RH_HAA": -0,
 
-            #"LF_HFE": -0.3154,
-            #"LH_HFE": -0.3154,
-            #"RF_HFE": -0.3154,
-            #"RH_HFE": -0.3154,
-            "LF_HFE": -0.,
-            "LH_HFE": -0.,
-            "RF_HFE": -0.,
-            "RH_HFE": -0.,
+            "LF_HFE": -0.5,
+            "LH_HFE": -0.5,
+            "RF_HFE": -0.5,
+            "RH_HFE": -0.5,
 
             "LF_KFE": 0.5615,
             "LH_KFE": 0.5615,
@@ -51,10 +47,11 @@ class FourWheeledCfg( LeggedRobotCfg ):
         }
 
     class control( LeggedRobotCfg.control ):
+        control_type = 'P'
         stiffness = {'HAA':40.,'HFE':60.,'KFE':60.,'WHL':40.}
         damping = {'HAA':2,'HFE':2,'KFE':2,'WHL':2}
         # action scale: target angle = actionScale * action + defaultAngle
-        action_scale = 0.5
+        action_scale = 0.25
         decimation = 4
 
     class rewards( LeggedRobotCfg.rewards ):
@@ -71,6 +68,9 @@ class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
             run_name = ''
             experiment_name = 'flat_fourwheeled'
+        class algorithm(LeggedRobotCfgPPO.algorithm):
+            entropy_coef = 0.01
+
 
 
 
