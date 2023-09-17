@@ -9,8 +9,9 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
 
     class terrain( LeggedRobotCfg.terrain ):
-        mesh_type = 'plane'
-        measure_heights = False
+      #  mesh_type = 'plane'
+     #   measure_heights = False
+        mesh_type = 'trimesh'
 
     class asset( LeggedRobotCfg.asset ):
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/four_wheeled/urdf/wheel_legged.urdf"
