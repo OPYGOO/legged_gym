@@ -66,6 +66,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
+            max_iterations = 3000
             run_name = ''
             experiment_name = 'flat_fourwheeled'
         class algorithm(LeggedRobotCfgPPO.algorithm):
