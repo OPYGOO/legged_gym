@@ -30,15 +30,15 @@ class FourWheeledCfg( LeggedRobotCfg ):
             "RF_HAA": 0,
             "RH_HAA": 0,
 
-            "LF_HFE": -0.5,
-            "LH_HFE": -0.5,
-            "RF_HFE": -0.5,
-            "RH_HFE": -0.5,
+            "LF_HFE": -0.6,
+            "LH_HFE": -0.6,
+            "RF_HFE": -0.6,
+            "RH_HFE": -0.6,
 
-            "LF_KFE": 0.5615,
-            "LH_KFE": 0.5615,
-            "RF_KFE": 0.5615,
-            "RH_KFE": 0.5615,
+            "LF_KFE": 0.7,
+            "LH_KFE": 0.8,
+            "RF_KFE": 0.7,
+            "RH_KFE": 0.8,
 
             "LF_WHL": 0.0,
             "LH_WHL": 0.0,
@@ -66,7 +66,7 @@ class FourWheeledCfg( LeggedRobotCfg ):
 
 class FourWheeledCfgPPO( LeggedRobotCfgPPO ):
         class runner( LeggedRobotCfgPPO.runner):
-            max_iterations = 3000
+            max_iterations = 1500
             run_name = ''
             experiment_name = 'flat_fourwheeled'
         class algorithm(LeggedRobotCfgPPO.algorithm):
