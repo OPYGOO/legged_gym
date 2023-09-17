@@ -25,10 +25,10 @@ class FourWheeledCfg( LeggedRobotCfg ):
     class init_state( LeggedRobotCfg.init_state ):
         pos = [0.0, 0.0, 0.35] # x,y,z [m]
         default_joint_angles = { # = target angles [rad] when action = 0.0
-            "LF_HAA": 0.2,
-            "LH_HAA": 0.2,
-            "RF_HAA": -0,
-            "RH_HAA": -0,
+            "LF_HAA": 0,
+            "LH_HAA": 0,
+            "RF_HAA": 0,
+            "RH_HAA": 0,
 
             "LF_HFE": -0.5,
             "LH_HFE": -0.5,
