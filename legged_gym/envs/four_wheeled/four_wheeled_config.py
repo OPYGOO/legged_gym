@@ -5,7 +5,9 @@ class FourWheeledCfg( LeggedRobotCfg ):
     class env( LeggedRobotCfg.env ):
         num_envs =  4096
         num_actions = 16
-        num_observations = 60
+       # num_observations = 60
+        num_observations = 247
+
 
 
     class terrain( LeggedRobotCfg.terrain ):
